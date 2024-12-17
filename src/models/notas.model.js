@@ -3,7 +3,7 @@ const calificaciones=[
 ]
 
 const postCalificaciones = async (nuevaCal) => {
-    if(typeof nuevaCal.apellido!== 'string'||typeof nuevaCal.nombre!== 'string'||nuevaCal.nota < 0 || nuevaCal.nota >10){
+    if(typeof nuevaCal.nombre!== 'string'||nuevaCal.nota < 0 || nuevaCal.nota >10){
         throw new Error("“Los datos ingresados no son válidos")
 
     }else{
